@@ -6,7 +6,7 @@ var app = angular.module('PomodoroApp', []).controller('MainCtrl', function($sco
   $scope.sessionName = 'Session';
   $scope.currentTotal;
   
-  var runTimer = false;
+  var runTimer = false; 
   var secs = 60 * $scope.timeLeft;
   $scope.originalTime = $scope.sessionLength;
   
@@ -19,7 +19,7 @@ var app = angular.module('PomodoroApp', []).controller('MainCtrl', function($sco
       (h > 0 ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (s < 10 ? "0" : "") + s
     ); 
   }
-  
+ 
   // Change default session length
   $scope.sessionLengthChange = function(time) {
     if (!runTimer){
@@ -34,7 +34,7 @@ var app = angular.module('PomodoroApp', []).controller('MainCtrl', function($sco
       }
     }
   }
-  
+
   // Change default break length
   $scope.breakLengthChange = function(time) {
     if (!runTimer){
@@ -49,7 +49,12 @@ var app = angular.module('PomodoroApp', []).controller('MainCtrl', function($sco
       }
     }
   }
-  
+
+  $scope.reset = function() {
+	$scope.timeLeft = $scope.sessionLength; 
+  }
+  $scope.reset(); 
+ 
   $scope.toggleTimer = function() {
     if (!runTimer) {
       if ($scope.currentName === 'Sesson') {
@@ -65,14 +70,14 @@ var app = angular.module('PomodoroApp', []).controller('MainCtrl', function($sco
       runTimer = false;
     }
   }
-  
+	 
   function updateTimer() {
     secs -= 1;
     if (secs < 0) {
       // countdown is finished
       
       // Play audio
-      var wav = 'http://www.oringz.com/oringz-uploads/sounds-917-communication-channel.mp3';
+      var wav = 'Nature-sounds-birds.mp3';
       var audio = new Audio(wav);
 			audio.play();
       
@@ -98,11 +103,10 @@ var app = angular.module('PomodoroApp', []).controller('MainCtrl', function($sco
         $scope.fillColor = '#99CC00';
       }
 	    $scope.timeLeft = secondsToHms(secs);
-      
+     
       var denom = 60 * $scope.originalTime;
       var perc = Math.abs((secs / denom) * 100 - 100);
       $scope.fillHeight = perc + '%';
     }
-  }
-  
+  }	
 });

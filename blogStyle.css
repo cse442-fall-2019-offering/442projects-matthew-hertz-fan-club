@@ -1,0 +1,18 @@
+﻿body {
+    padding-top: Srem;
+    background-image: url('wow.jpg');
+    background-size: cover
+}
+.is-active{
+    border-bottom: 2px solid white;
+}
+
+table#tbl th{
+  width: 400px;
+  background-color: #404040;
+}
+
+table#tbl tr{
+  width: 400px;
+  background-color: #404040;
+}

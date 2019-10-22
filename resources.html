@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleTry.css" />
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="test1.html" class="navbar-brand">Home</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="test3.html" class="nav-link">Timer</a></li>
+                <li class="nav-item"><a href="test2.html" class="nav-link">Blog</a></li>
+                <li class="nav-item is-active"><a href="trackMed.html" class="nav-link">Tracker</a></li>
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+    <!--
+     <div class="item active">
+                <img src="boat.jpg" class="rounded mx-auto d-block" alt="First slide"/>
+            </div>
+      
+-->
+    <!-- ADD Modal -->
+    <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Meditaion Information</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter date</label>
+                            <input type="text" class="form-control" id="Date" placeholder="Enter date">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter duration</label>
+                            <input type="text" class="form-control" id="Dur" placeholder="Enter duration">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter notes</label>
+                            <input type="text" class="form-control" id="Note" placeholder="Enter notes">
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="Save">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDIT Modal -->
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter date</label>
+                            <input type="text" class="form-control" id="" placeholder="Enter date">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter duration</label>
+                            <input type="text" class="form-control" id="" placeholder="Enter duration">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Enter notes</label>
+                            <input type="text" class="form-control" id="" placeholder="Enter notes">
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--           <div class="jumbotron">-->
+        <div class="card">
+            <div class="card-header">
+                Resources Page: Use this page to learn the basics.
+            </div>
+            <div class="resourceSam">
+                <a href= https://samharris.org/how-to-meditate/>"How To Meditate" by Sam Harris</a>
+            </div>
+            <div class="resourceMindful">
+                <a href= https://www.mindful.org/how-to-meditate/>"How To Meditate" by Mindful.org</a>
+            </div>
+            <div class="resourceHeadspace">
+                <a href= https://www.headspace.com/meditation/how-to-meditate>"How To Meditate" by Headspace</a>
+            </div>
+            <div class="resourceBook">
+                <a href= http://misc.equanimity.info/downloads/mindfulness_in_plain_english.pdf>"Mindfulness In Plain English" by Henepola Gunaratana</a>
+                 </div>
+                 <div class="resourceDan">
+                    <a href= https://www.forbes.com/sites/danschawbel/2018/01/02/dan-harris-how-meditation-can-make-you-happier-and-more-successful/#49bb08e6d337>"How Meditation Can Make You Happier And More Successful" by Dan Harris</a>
+                </div>
+<!--        
+                        <tr>
+                            <th scope="row">-</th>
+                            <td>September 17</td>
+                            <td>30 mins</td>
+                            <td>Rain sounds</td>
+                            <td class="text-right">
+                                <button class="btn btn-primary badge-pill" data-toggle="modal" data-target="#edit" style="width: 80px;"> EDIT</button>
+                                <button class="btn btn-danger badge-pill" style="width: 80px;"> DELETE</button>
+                            </td>
+                        </tr>
+-->
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--       </div>-->
+     
+
+
+</body>
+
+</html>

@@ -32,8 +32,8 @@
         echo "Login success! Welcome ".$row['username'];
         header('Location: Timer.html');
     } else {
-        echo "";
+        echo "Failed to login.";
+        header('Location: login.php');
         }
-    }
-    echo " Failed to log in. PLEASE TRY AGAIN!"
+	}
 ?>

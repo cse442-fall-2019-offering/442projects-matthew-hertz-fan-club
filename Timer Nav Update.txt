@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+       
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item is-active"><a href="Timer.html" class="nav-link">Timer</a></li>
+                <li class="nav-item"><a href="blog%20page%20template.html" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="trackMed.html" class="nav-link">Tracker</a></li>
+                <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                <input type="button" class = "btn btn-light btn-sm active" value="1" aria-pressed ="true" onclick="document.body.style.cssText+=';background-image: url(timerWow1.jpg);background-repeat: no-repeat;background-size: cover;';" />
+                <input type="button" class = "btn btn-secondary btn-sm active" value="2" onclick="document.body.style.cssText+=';background-image: url(timerWow2.jpg);background-repeat: no-repeat;';" />
+                <input type="button" class = "btn btn-info btn-sm" value="3" onclick="document.body.style.cssText+=';background-image: url(timerWow3.jpg);background-repeat: no-repeat;';" />
+            </ul>
+        </div>
+    </nav>
+    

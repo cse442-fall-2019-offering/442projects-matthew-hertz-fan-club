@@ -36,6 +36,19 @@
             </div>
       
 -->
+   
+   
+   <div class="form-row text-center">
+       <div class="col-12">
+           <button class="btn btn-outline-primary btn-sm" onclick="quote()">Motivation</button> 
+           </div>
+   </div>
+   <div class=" form-row text-center" >
+       <div class="col-12" id="quoteHere">
+           
+       </div>
+   
+   </div>
     <!-- ADD Modal -->
     <div class="modal fade" id="add" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -210,6 +223,14 @@
             $("#date").val("");
             $("#dur").val("");
             $("#note").val("");
+        }
+        
+        
+        var quotes = ['You are doing great', 'Keep it up', 'School is hard but your future self will be proud you finished', 'It does not matter how slowly you go as long as you do not stop', 'Only I can change my life. No one can do it for me', 'Life is 10% what happens to you and 90% how you react to it', 'Optimism is the faith that leads to acheivement. Nothing can be done without hope and confidence']
+        
+        function quote(){
+            var num = Math.floor(Math.random() * (quotes.length));
+            document.getElementById('quoteHere').innerHTML = quotes[num];
         }
         
     </script>

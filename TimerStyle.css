@@ -4,14 +4,22 @@
   font-family: Open Sans, Arial;
 }
 
+.col-12{
+	font-weight: bold;
+	color: white;
+}
+
 body{
     padding-top: Srem;
-    background-image: url('wow.jpg');
-    background-size: cover
+    background-image: url('timerWow1.jpg');
+    background-size: cover;
+	background-repeat: no-repeat;
 }
 .is-active{
     border-bottom: 2px solid white;
 }
+
+
 h1 {
   display: block;
   margin: 0 auto;

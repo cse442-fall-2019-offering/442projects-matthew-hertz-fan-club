@@ -1,0 +1,28 @@
+body{
+    min-height: 100bh;
+    padding-top: Srem;
+    background-image: url('resourceWow.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.is-active{
+    border-bottom: 2px solid white;
+}
+h1 {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  font-family: 'Pacifico';
+  font-size: 5em;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  padding: 20px;
+}

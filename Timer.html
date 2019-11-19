@@ -9,20 +9,46 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="TimerStyle.css" />
+
     </head>
 	<body>
-     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-       <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav">
-           <li class="nav-item is-active"><a href="Timer.html" class="nav-link">Timer</a></li>
-           <li class="nav-item"><a href="blog page template.html" class="nav-link">Blog</a></li>
-           <li class="nav-item"><a href="trackMed.html" class="nav-link">Tracker</a></li>
-       </ul>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item is-active"><a href="Timer.html" class="nav-link">Timer</a></li>
+                <li class="nav-item"><a href="blog%20page%20template.php" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="trackMed.html" class="nav-link">Tracker</a></li>
+                <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+        <li class="nav-item"><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+                <input type="button" class = "btn btn-light btn-sm active" value="1" aria-pressed ="true" onclick="document.body.style.cssText+=';background-image: url(timerWow1.jpg);background-repeat: no-repeat;background-size: cover;';" />
+                <input type="button" class = "btn btn-secondary btn-sm active" value="2" onclick="document.body.style.cssText+=';background-image: url(timerWow2.jpg);background-repeat: no-repeat;';" />
+                <input type="button" class = "btn btn-info btn-sm" value="3" onclick="document.body.style.cssText+=';background-image: url(timerWow3.jpg);background-repeat: no-repeat;';" />
+				</ul>
+            <ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="index.php?logout=1" class="nav-link">Logout</a></li>
+			</ul>
+        </div>
+    </nav>
+	 
+	<div class="form-row text-center">
+       <div class="col-12">
+           <button class="btn btn-outline-primary btn-sm" onclick="quote()">Motivation</button> 
+           </div>
+	</div>
+	<div class=" form-row text-center" >
+       <div class="col-12" id="quoteHere">
+           
        </div>
-    </nav> 
+   
+   </div>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-<center> <strong> <p>Use plus and minus key to increment or decrement the time you want. Click session button to activate timer. The reset button will take you to the orginial time value</p> </center>
-<h1>MeTime</h1> 
+<center> <font color = "white">Use plus and minus key to increment or decrement the time you want. Click session button to activate timer. The reset button will take you to the orginial time value</font></center>
+<h1>MeTime</h1>  
 <main ng-app="PomodoroApp" ng-controller="MainCtrl">
   <header>
     <div class="session">
@@ -46,5 +72,13 @@
 	</div>
   </section>
   <script src="TimerFuncs.js"></script>
-  <link rel="stylesheet" href="TimerStyle.css" />
+  <script>
+	var quotes = ['You are doing great', 'Keep it up', 'School is hard but your future self will be proud you finished', 'It does not matter how slowly you go as long as you do not stop', 'Only I can change my life. No one can do it for me', 'Life is 10% what happens to you and 90% how you react to it', 'Optimism is the faith that leads to acheivement. Nothing can be done without hope and confidence']
+        
+        function quote(){
+            var num = Math.floor(Math.random() * (quotes.length));
+            document.getElementById('quoteHere').innerHTML = quotes[num];
+        }
+        
+    </script>
 </main>

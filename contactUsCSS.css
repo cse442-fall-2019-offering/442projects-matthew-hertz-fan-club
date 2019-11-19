@@ -1,0 +1,24 @@
+body{
+    min-height: 100bh;
+    padding-top: Srem;
+    background-image: url('ContactWow.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.is-active{
+    border-bottom: 2px solid white;
+}
+
+.box{
+	display: block;
+    margin-before: 0.5em;
+    margin-after: 0.5em;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+	background-color: #BEBEBE;
+}
+

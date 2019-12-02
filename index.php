@@ -13,6 +13,8 @@
         <link rel="stylesheet" href="styleTry.css" />
 
 <body>
+    
+    <!- This block contains code for the returning user sign-in page ->
     <center>
         <strong><h1>MeTime</h1></strong>
             <h2>Sign in</h2>
@@ -31,6 +33,8 @@
                 <input type="submit" id="btn" value="Login">  
 			</form>
 			</div>
+        
+        <!- Background image source ->
         <img src="https://media.istockphoto.com/photos/close-up-of-meditation-in-park-at-sunrise-picture-id1039533792" alt="Pic 1" style="width:500px;height:600px;">
         <img src="https://media.istockphoto.com/vectors/cute-sloth-sitting-in-lotus-yoga-pose-cartoon-sloth-bear-vector-vector-id1076571820" alt="Pic 2" style="width:500px;height:600px;">
     </center>

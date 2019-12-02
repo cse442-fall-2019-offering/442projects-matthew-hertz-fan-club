@@ -13,71 +13,81 @@
     <link rel="stylesheet" href="contactUsCSS.css" />
 </head>
 
+
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-       <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="Timer.html" class="nav-link">Timer</a></li>
-                <li class="nav-item"><a href="blog%20page%20template.php" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="trackMed.html" class="nav-link">Tracker</a></li>
-                <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
-				<li class="nav-item is-active"><a href="contactUs.html" class="nav-link">Contact Us</a></li>
-                <input type="button" class = "btn btn-light btn-sm active" value="1" aria-pressed ="true" onclick="document.body.style.cssText+=';background-image: url(contactWow.jpg);background-repeat: no-repeat;background-size: cover;';" />
-                <input type="button" class = "btn btn-secondary btn-sm active" value="2" onclick="document.body.style.cssText+=';background-image: url(contactWow2.jpg);background-repeat: no-repeat;';" />
-                <input type="button" class = "btn btn-info btn-sm" value="3" onclick="document.body.style.cssText+=';background-image: url(contactWow3.jpg);background-repeat: no-repeat;';" />
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a href="index.php?logout=1" class="nav-link">Logout</a></li>
-			</ul>            
+    
+    <!- Code for navbar at top of the screen ->
+    
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+           <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="Timer.html" class="nav-link">Timer</a></li>
+                    <li class="nav-item"><a href="blog%20page%20template.php" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="trackMed.html" class="nav-link">Tracker</a></li>
+                    <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li class="nav-item is-active"><a href="contactUs.html" class="nav-link">Contact Us</a></li>
+                    <input type="button" class = "btn btn-light btn-sm active" value="1" aria-pressed ="true" onclick="document.body.style.cssText+=';background-image: url(contactWow.jpg);background-repeat: no-repeat;background-size: cover;';" />
+                    <input type="button" class = "btn btn-secondary btn-sm active" value="2" onclick="document.body.style.cssText+=';background-image: url(contactWow2.jpg);background-repeat: no-repeat;';" />
+                    <input type="button" class = "btn btn-info btn-sm" value="3" onclick="document.body.style.cssText+=';background-image: url(contactWow3.jpg);background-repeat: no-repeat;';" />
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="index.php?logout=1" class="nav-link">Logout</a></li>
+                </ul>            
+            </div>
+        </nav>
+    
+    
+    <!- Motivational message button displayed at top of screen ->
+        <div class="form-row text-center" style="padding-top: 5px; padding-bottom: 5px">
+            <div class="col-12">
+                <button class="btn btn-outline-primary btn-sm" onclick="quote()">Motivation</button> 
+            </div>
         </div>
-    </nav>
-	  <div class="form-row text-center" style="padding-top: 5px; padding-bottom: 5px">
-       <div class="col-12">
-           <button class="btn btn-outline-primary btn-sm" onclick="quote()">Motivation</button> 
-           </div>
-   </div>
-   <div class=" form-row text-center" >
-       <div class="col-12" id="quoteHere">
-           
-       </div>
-   
-   </div>
-	<center>
-	<div class="container">
-        <div class="card">
-            <div class="card-header">
-                Contact Us: Our personal information can be found below.
+    
+        <div class=" form-row text-center" >
+            <div class="col-12" id="quoteHere"> </div>
+        </div>
+    
+    <!- Container that holds contact information for developers of the webapp ->
+    
+        <center>
+            <div class="container">
+                <div class="card">
+                    <div class="card-header">
+                        Contact Us: Our personal information can be found below.
+                    </div>
+                    <div class="box">
+                        If you want motivational emails contact us here!!!!
+                        <br>Email Me Here: <a href= mailto:MeTimeWebsite@gmail.com>MeTimeWebsite@gmail.com</a>
+                    </div>
+                    <div class="box">
+                        Alex Cohen
+                        <br>Email Me Here: <a href= mailto:accohen3@buffalo.edu>accohen3@buffalo.edu</a>
+                    </div>
+                    <div class="box">
+                        William Lenore
+                        <br>Email Me Here: <a href= mailto:walenore@buffalo.edu>walenore@buffalo.edu</a>
+                    </div>
+                    <div class="box">
+                        Tim Voisich
+                        <br>Email Me Here: <a href= mailto:tdvoisic@buffalo.edu>tdvoisic@buffalo.edu</a>
+                    </div>
+                    <div class="box">
+                        Joseph Glickman
+                        <br>Email Me Here: <a href= mailto:jglickma@buffalo.edu>jglickma@buffalo.edu</a>
+                    </div>
+                    <div class="box">
+                        Mark Sigalov
+                        <br>Email Me Here: <a href= mailto:marksiga@buffalo.edu>marksiga@buffalo.edu</a>
+                    </div>
+                </div>
             </div>
-			<div class="box">
-				If you want motivational emails contact us here!!!!
-                <br>Email Me Here: <a href= mailto:MeTimeWebsite@gmail.com>MeTimeWebsite@gmail.com</a>
-            </div>
-            <div class="box">
-				Alex Cohen
-                <br>Email Me Here: <a href= mailto:accohen3@buffalo.edu>accohen3@buffalo.edu</a>
-            </div>
-            <div class="box">
-				William Lenore
-                <br>Email Me Here: <a href= mailto:walenore@buffalo.edu>walenore@buffalo.edu</a>
-            </div>
-			<div class="box">
-				Tim Voisich
-                <br>Email Me Here: <a href= mailto:tdvoisic@buffalo.edu>tdvoisic@buffalo.edu</a>
-            </div>
-			<div class="box">
-				Joseph Glickman
-                <br>Email Me Here: <a href= mailto:jglickma@buffalo.edu>jglickma@buffalo.edu</a>
-            </div>
-			<div class="box">
-				Mark Sigalov
-                <br>Email Me Here: <a href= mailto:marksiga@buffalo.edu>marksiga@buffalo.edu</a>
-            </div>
-		</div>
-	</div>
-	</center>
+        </center>
+    
+    <!- Function that generates random motiational message on click of Motivation button ->
 	<script>
 	var quotes = ['You are doing great!', 'Keep it up!', 'School is hard but your future self will be proud!', 'It does not matter how slowly you go, as long as you do not stop.', 'Only I can change my life. No one can do it for me.', 'Life is 10% what happens to you and 90% how you react to it', 'Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.']
         

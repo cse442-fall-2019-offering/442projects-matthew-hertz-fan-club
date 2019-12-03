@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body> <!--  NAV BAR  -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
        <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
             <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
         </div>
     </nav> 
 	</nav>
-	  <div class="form-row text-center" style="padding-top: 5px; padding-bottom: 5px">
+	  <div class="form-row text-center">
        <div class="col-12">
            <button class="btn btn-outline-primary btn-sm" onclick="quote()">Motivation</button> 
            </div>
@@ -59,7 +59,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Meditation Information</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Meditaion Information</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -127,17 +127,11 @@
     </div>
 
     <div class="container">
-        <!--           <div class="jumbotron">-->
+        <!--   WEB PAGES GO HERE        <div class="jumbotron">--> 
         <div class="card">
             <div class="card-header">
-                <center>Resources Page: Use this page to learn the basics.</center>
+                Resources Page: Use this page to learn the basics.
             </div>
-			<div class="resourceDan">
-                We can all help prevent suicide. The Lifeline provides 24/7, free and confidential support for people in distress, prevention and crisis resources for you or your loved ones, and best practices for professionals.
-				<p></p>
-				<strong>Call this number for immediate help: 1-800-273-8255</strong>
-				<p></p>
-			</div>
             <div class="resourceSam">
                 <a href= https://samharris.org/how-to-meditate/>"How To Meditate" by Sam Harris</a>
             </div>
@@ -149,19 +143,10 @@
             </div>
             <div class="resourceBook">
                 <a href= http://misc.equanimity.info/downloads/mindfulness_in_plain_english.pdf>"Mindfulness In Plain English" by Henepola Gunaratana</a>
-            </div>
-            <div class="resourceDan">
-                <a href= https://www.forbes.com/sites/danschawbel/2018/01/02/dan-harris-how-meditation-can-make-you-happier-and-more-successful/#49bb08e6d337>"How Meditation Can Make You Happier And More Successful" by Dan Harris</a>
-            </div>
-			<div class="resourceDan">
-                <a href= https://www.gaiam.com/blogs/discover/meditation-101-techniques-benefits-and-a-beginner-s-how-to>"MEDITATION 101: TECHNIQUES, BENEFITS, AND A BEGINNER’S HOW-TO" by Inner IDEA</a>
-            </div>
-			<div class="resourceDan">
-                <a href= https://zenhabits.net/meditation-guide/>"Meditation for Beginners: 20 Practical Tips for Understanding the Mind" by Leo Babauta</a>
-            </div>
-			<div class="resourceDan">
-                <a href= http://www.thelawofattraction.com/beginners-guide-meditation/>"How To Meditate: A Step-By-Step Beginners Guide To Meditation" by Katherine Hurst</a>
-            </div>
+                 </div>
+                 <div class="resourceDan">
+                    <a href= https://www.forbes.com/sites/danschawbel/2018/01/02/dan-harris-how-meditation-can-make-you-happier-and-more-successful/#49bb08e6d337>"How Meditation Can Make You Happier And More Successful" by Dan Harris</a>
+                </div>
 <!--        
                         <tr>
                             <th scope="row">-</th>
@@ -184,7 +169,7 @@
      
 
 	<script>
-	var quotes = ['You are doing great!', 'Keep it up!', 'School is hard but your future self will be proud!', 'It does not matter how slowly you go, as long as you do not stop.', 'Only I can change my life. No one can do it for me.', 'Life is 10% what happens to you and 90% how you react to it', 'Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.']
+	var quotes = ['You are doing great', 'Keep it up', 'School is hard but your future self will be proud you finished', 'It does not matter how slowly you go as long as you do not stop', 'Only I can change my life. No one can do it for me', 'Life is 10% what happens to you and 90% how you react to it', 'Optimism is the faith that leads to acheivement. Nothing can be done without hope and confidence']
         
         function quote(){
             var num = Math.floor(Math.random() * (quotes.length));

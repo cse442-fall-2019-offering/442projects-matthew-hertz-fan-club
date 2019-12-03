@@ -1,0 +1,39 @@
+body{    
+	padding-top: Srem;
+    background-image: url('signUp.jpg');
+    background-size: cover;
+	background-repeat: no-repeat;
+}
+h1{
+	font-family: Apple Chancery;
+	font-variant: small-caps;
+	text-align: center;
+}
+h3{
+
+	text-align: center;
+}
+.container{
+	font-size: 16px;
+	font-weight: bold;
+	margin: 15px auto;
+	max-width: 700px;
+}
+.form-control-form-control-lg{
+	width: 200px;
+}
+
+#frm{
+    border: solid grad 1px;
+    width: 20%;
+    border-radius: 5px;
+    margin: 100px auto;
+    background: white;
+    padding: 50px;
+}
+#btn{
+    color: #fff;
+    background: #337ab7;
+    padding: 5px;
+    margin-left: 69%;
+}
